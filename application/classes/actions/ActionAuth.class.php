@@ -49,6 +49,31 @@ class ActionAuth extends Action
          * Отключаем отображение статистики выполнения
          */
         Router::SetIsShowStats(false);
+
+		// Load the CAS lib
+	    define('__ROOT__', dirname(dirname(__FILE__)));
+	    require_once(__ROOT__.'\..\libs\application\CAS-1.3.5\CAS.php');
+
+	    // Enable debugging
+	    phpCAS::setDebug();
+	    // Enable verbose error messages. Disable in production!
+	    phpCAS::setVerbose(true);
+
+	    //// Initialize phpCAS
+	    // Full Hostname of your CAS Server
+	    $cas_host = 'localhost';
+
+		// Context of the CAS Server
+	    $cas_context = '/cas';
+
+		// Port of your CAS server. Normally for a https server it's 443
+	    $cas_port = 8080;
+	    phpCAS::client(CAS_VERSION_2_0, $cas_host, $cas_port, $cas_context);
+
+	    // For quick testing you can disable SSL validation of the CAS server.
+		// THIS SETTING IS NOT RECOMMENDED FOR PRODUCTION.
+		// VALIDATING THE CAS SERVER IS CRUCIAL TO THE SECURITY OF THE CAS PROTOCOL!
+	    phpCAS::setNoCasServerValidation();
     }
 
     /**
@@ -80,6 +105,16 @@ class ActionAuth extends Action
      * Ajax авторизация
      */
     protected function EventAjaxLogin()
+    {
+//	    echo("<script>console.log('PHP: ".$data."');</script>");
+	    echo("<script>console.log('CAS is working');</script>");
+
+	    // force CAS authentication
+	    phpCAS::forceAuthentication();
+	    return;
+    }
+
+    protected function EventAjaxLogin1()
     {
         /**
          * Устанвливаем формат Ajax ответа

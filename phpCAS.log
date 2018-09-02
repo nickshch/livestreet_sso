@@ -1,0 +1,136 @@
+91B3 .START (2018-04-22 22:40:31) phpCAS-1.3.5 ****************** [CAS.php:468]
+D3A2 .START (2018-04-22 22:40:56) phpCAS-1.3.5 ****************** [CAS.php:468]
+D3A2 .=> phpCAS::forceAuthentication() [ActionAuth.class.php:112]
+D3A2 .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+D3A2 .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+D3A2 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+D3A2 .|    |    |    |    no user found [Client.php:1635]
+D3A2 .|    |    |    <= false
+D3A2 .|    |    |    no ticket found [Client.php:1494]
+D3A2 .|    |    <= false
+D3A2 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+D3A2 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+D3A2 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+D3A2 .|    |    |    |    |    Final URI: http://127.0.0.1:8001/auth/ajax-login [Client.php:3548]
+D3A2 .|    |    |    |    <= 'http://127.0.0.1:8001/auth/ajax-login'
+D3A2 .|    |    |    <= 'https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login'
+D3A2 .|    |    |    Redirect to : https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login [Client.php:1663]
+D3A2 .|    |    |    exit()
+D3A2 .|    |    |    -
+D3A2 .|    |    -
+D3A2 .|    -
+CBD6 .START (2018-04-22 22:42:07) phpCAS-1.3.5 ****************** [CAS.php:468]
+CBD6 .=> phpCAS::client('3.0', 'localhost', 8080, '/cas') [ActionAuth.class.php:71]
+CBD6 .|    => CAS_Client::__construct('3.0', false, 'localhost', 8080, '/cas', true) [CAS.php:359]
+CBD6 .|    |    Session is not authenticated [Client.php:938]
+CBD6 .|    <= ''
+CBD6 .<= ''
+CBD6 .=> phpCAS::setNoCasServerValidation() [ActionAuth.class.php:76]
+CBD6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+CBD6 .<= ''
+CBD6 .=> phpCAS::forceAuthentication() [ActionAuth.class.php:113]
+CBD6 .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+CBD6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+CBD6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+CBD6 .|    |    |    |    no user found [Client.php:1635]
+CBD6 .|    |    |    <= false
+CBD6 .|    |    |    no ticket found [Client.php:1494]
+CBD6 .|    |    <= false
+CBD6 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+CBD6 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+CBD6 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+CBD6 .|    |    |    |    |    Final URI: http://127.0.0.1:8001/auth/ajax-login [Client.php:3548]
+CBD6 .|    |    |    |    <= 'http://127.0.0.1:8001/auth/ajax-login'
+CBD6 .|    |    |    <= 'https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login'
+CBD6 .|    |    |    Redirect to : https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login [Client.php:1663]
+CBD6 .|    |    |    exit()
+CBD6 .|    |    |    -
+CBD6 .|    |    -
+CBD6 .|    -
+7A10 .START (2018-04-22 22:42:24) phpCAS-1.3.5 ****************** [CAS.php:468]
+7A10 .=> phpCAS::client('2.0', 'localhost', 8080, '/cas') [ActionAuth.class.php:71]
+7A10 .|    => CAS_Client::__construct('2.0', false, 'localhost', 8080, '/cas', true) [CAS.php:359]
+7A10 .|    |    Session is not authenticated [Client.php:938]
+7A10 .|    <= ''
+7A10 .<= ''
+7A10 .=> phpCAS::setNoCasServerValidation() [ActionAuth.class.php:76]
+7A10 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+7A10 .<= ''
+7A10 .=> phpCAS::forceAuthentication() [ActionAuth.class.php:113]
+7A10 .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+7A10 .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+7A10 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+7A10 .|    |    |    |    no user found [Client.php:1635]
+7A10 .|    |    |    <= false
+7A10 .|    |    |    no ticket found [Client.php:1494]
+7A10 .|    |    <= false
+7A10 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+7A10 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+7A10 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+7A10 .|    |    |    |    |    Final URI: http://127.0.0.1:8001/auth/ajax-login [Client.php:3548]
+7A10 .|    |    |    |    <= 'http://127.0.0.1:8001/auth/ajax-login'
+7A10 .|    |    |    <= 'https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login'
+7A10 .|    |    |    Redirect to : https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login [Client.php:1663]
+7A10 .|    |    |    exit()
+7A10 .|    |    |    -
+7A10 .|    |    -
+7A10 .|    -
+BAFE .START (2018-04-22 22:44:12) phpCAS-1.3.5 ****************** [CAS.php:468]
+BAFE .=> phpCAS::client('2.0', 'localhost', 8080, '/cas') [ActionAuth.class.php:71]
+BAFE .|    => CAS_Client::__construct('2.0', false, 'localhost', 8080, '/cas', true) [CAS.php:359]
+BAFE .|    |    Session is not authenticated [Client.php:938]
+BAFE .|    <= ''
+BAFE .<= ''
+BAFE .=> phpCAS::setNoCasServerValidation() [ActionAuth.class.php:76]
+BAFE .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+BAFE .<= ''
+BAFE .=> phpCAS::forceAuthentication() [ActionAuth.class.php:113]
+BAFE .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+BAFE .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+BAFE .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+BAFE .|    |    |    |    no user found [Client.php:1635]
+BAFE .|    |    |    <= false
+BAFE .|    |    |    no ticket found [Client.php:1494]
+BAFE .|    |    <= false
+BAFE .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+BAFE .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+BAFE .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+BAFE .|    |    |    |    |    Final URI: http://127.0.0.1:8001/auth/ajax-login [Client.php:3548]
+BAFE .|    |    |    |    <= 'http://127.0.0.1:8001/auth/ajax-login'
+BAFE .|    |    |    <= 'https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login'
+BAFE .|    |    |    Redirect to : https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login [Client.php:1663]
+BAFE .|    |    |    exit()
+BAFE .|    |    |    -
+BAFE .|    |    -
+BAFE .|    -
+D3B6 .START (2018-04-22 22:46:14) phpCAS-1.3.5 ****************** [CAS.php:468]
+D3B6 .=> phpCAS::client('2.0', 'localhost', 8080, '/cas') [ActionAuth.class.php:71]
+D3B6 .|    => CAS_Client::__construct('2.0', false, 'localhost', 8080, '/cas', true) [CAS.php:359]
+D3B6 .|    |    Session is not authenticated [Client.php:938]
+D3B6 .|    <= ''
+D3B6 .<= ''
+D3B6 .=> phpCAS::setNoCasServerValidation() [ActionAuth.class.php:76]
+D3B6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+D3B6 .<= ''
+D3B6 .=> phpCAS::setNoCasServerValidation() [ActionAuth.class.php:111]
+D3B6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+D3B6 .<= ''
+D3B6 .=> phpCAS::forceAuthentication() [ActionAuth.class.php:114]
+D3B6 .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+D3B6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+D3B6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+D3B6 .|    |    |    |    no user found [Client.php:1635]
+D3B6 .|    |    |    <= false
+D3B6 .|    |    |    no ticket found [Client.php:1494]
+D3B6 .|    |    <= false
+D3B6 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+D3B6 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+D3B6 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+D3B6 .|    |    |    |    |    Final URI: http://127.0.0.1:8001/auth/ajax-login [Client.php:3548]
+D3B6 .|    |    |    |    <= 'http://127.0.0.1:8001/auth/ajax-login'
+D3B6 .|    |    |    <= 'https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login'
+D3B6 .|    |    |    Redirect to : https://localhost:8080/cas/login?service=http%3A%2F%2F127.0.0.1%3A8001%2Fauth%2Fajax-login [Client.php:1663]
+D3B6 .|    |    |    exit()
+D3B6 .|    |    |    -
+D3B6 .|    |    -
+D3B6 .|    -

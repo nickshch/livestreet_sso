@@ -49,6 +49,11 @@ class ActionAuth extends Action
          * Отключаем отображение статистики выполнения
          */
         Router::SetIsShowStats(false);
+	    /**
+	     * Подключаем SSO брокера. Параметры берутся из переменных окружения.
+	     */
+	    $broker = new Jasny\SSO\Broker(getenv('SSO_SERVER'), getenv('SSO_BROKER_ID'), getenv('SSO_BROKER_SECRET'));
+	    $broker->attach(true);
     }
 
     /**

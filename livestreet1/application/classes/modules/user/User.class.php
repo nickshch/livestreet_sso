@@ -76,8 +76,6 @@ class ModuleUser extends Module
     {
 	    $conn = $this->Database_GetConnect(Config::Get('db_user.params'));
 	    $this->oMapper = Engine::GetMapper(__CLASS__, null, $conn);
-//	    Engine::getInstance()->Database_GetConnect($aConfig);
-//        $this->oMapper = Engine::GetMapper(__CLASS__);
         /**
          * Проверяем есть ли у юзера сессия, т.е. залогинен или нет
          */

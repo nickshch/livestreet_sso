@@ -1,5 +1,5 @@
 # livestreet_sso
-We have two backends with Livestreet CMS and we want Single-Sign-On.
+We have two Livestreet CMS and we want Single-Sign-On.
 
 ## Installation guide
 1. We need 3 databases:
